@@ -1,0 +1,103 @@
+#title{
+  text-align: center;
+  color: #fff;
+  font-weight: bolder;
+}
+html,body{
+  min-width:260px;
+  font-family: 'Rubik', sans-serif;
+    background-color: #fcc;
+ 
+    /* Webkit */
+    background-image:
+        -webkit-gradient(radial, 50% 50%, 2, 50% 50%, 40, from(white), color-stop(0.1, rgba(255, 255, 255, 0.5)), to(transparent)),         -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 30, from(white), color-stop(0.1, rgba(255,186,170,.4)), to(transparent)),         -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 40, from(rgba(255,255,255,.9)), color-stop(0.05, rgba(251,255,186,.3)), to(transparent)),         -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 30, from(rgba(255,255,255,.4)), color-stop(0.03, rgba(253,255,219,.2)), to(transparent));
+    /* Background Attributes */
+    background-size: 550px 550px, 350px 350px, 250px 270px, 220px 200px;
+    background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+ 
+    /* Animation */
+    animation-name: movement;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+ 
+    /* Firefox */
+    -moz-animation-name: movement;
+    -moz-animation-duration: 5s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+ 
+    /* Webkit */
+    -webkit-animation-name: movement;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+@keyframes movement
+{
+    from {
+            background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+    }
+    to {
+            background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+    }
+}
+@-moz-keyframes movement
+{
+    from {
+            background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+    }
+    to {
+            background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+    }
+}
+@-webkit-keyframes movement
+{
+    from {
+            background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+    }
+    to {
+            background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+    }
+}
+.main-image{
+  max-width: 100%; 
+  display: block; 
+  height: auto;
+  margin: auto;
+}
+#img-div{
+  width:100%;
+  color: #fff;
+}
+#img-caption{
+  margin:15px;
+  text-align: center;
+  font-size:40px;
+  font-weight: bold;
+}
+#tribute-info{
+  color: #fff;
+  margin: auto;
+  text-align: justify;
+/*   background-color: #90d5ec;
+  background-image: linear-gradient(315deg, #fc575e 0%, #90d5ec 74%); */
+
+}
+.quotes{
+/*   background-color: #bf3a30;
+  background-image: linear-gradient(315deg, #864ba2 0%, #bf3a30 74%); */
+}
+.headline{
+  color: red;
+}
+.para-img{
+  display: block;
+  float: right;
+}
+.img-right{
+  margin: 0px 40px 0px 40px;
+}
+.caption{
+  text-align: center;
+}
